@@ -7,6 +7,7 @@
     actions:
       - theme: brand
         text: Empezar
+        link: /design/colors
     
   features:
     - icon: 🎨
