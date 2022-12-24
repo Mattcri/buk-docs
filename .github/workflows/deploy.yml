@@ -22,11 +22,10 @@ jobs:
               prefix: npm
             paths:
               - node_modules/
+      - run: npm install
 
       - name: Build
-        script:
-          - npm install
-          - npm run docs:build
+        run: npm run docs:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
