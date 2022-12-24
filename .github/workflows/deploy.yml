@@ -15,13 +15,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache:
-            key:
-              files:
-                - package-lock.json
-              prefix: npm
-            paths:
-              - node_modules/
+          cache: npm
+
       - run: npm install
 
       - name: Build
